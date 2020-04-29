@@ -1,0 +1,28 @@
+service: backend-serverless
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-west-1
+
+
+functions:
+  app:
+    handler: handler.app
+    events:
+      - http:
+          path: /tasks
+          method: get
+          cors: true
+      - http:
+          path: /tasks/{id}
+          method: put
+          cors: true
+      - http:
+          path: /tasks
+          method: post
+          cors: true
+      - http:
+          path: /tasks/{id}
+          method: delete
+          cors: true
