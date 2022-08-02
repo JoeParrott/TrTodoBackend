@@ -15,7 +15,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mysql": "^2.18.1",
-    "serverless": "^1.69.0",
+    "serverless": "^1.83.3",
     "serverless-http": "^2.3.2"
   },
   "devDependencies": {
